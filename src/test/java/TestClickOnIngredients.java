@@ -11,8 +11,8 @@ public class TestClickOnIngredients {
     public void testClickOnFilling(){
         Ingredients ingredients = open ("https://stellarburgers.nomoreparties.site",
                 Ingredients.class);
-        ingredients.getClickOnFilling();
-        assertTrue("Не верный раздел",ingredients.visibleFillingSection());
+        ingredients.checkTransitionFillingSection();
+        assertTrue("Неверный раздел",ingredients.checkIsRealFillingSection());
 
     }
     @DisplayName("Test click on sauce")
@@ -20,18 +20,18 @@ public class TestClickOnIngredients {
     public void testClickOnSauce(){
         Ingredients ingredients = open ("https://stellarburgers.nomoreparties.site",
                 Ingredients.class);
-        ingredients.getClickOnFilling();
-        ingredients.getClickSauce();
-        assertTrue("Не верный раздел",ingredients.visibleSauceSection());
+        ingredients.checkTransitionFillingSection();
+        ingredients.checkTransitionSauceSection();
+        assertTrue("Неверный раздел",ingredients.checkIsRealSauceSection());
     }
     @DisplayName("Test click on bun")
     @Test
     public void testClickOnBun(){
         Ingredients ingredients = open ("https://stellarburgers.nomoreparties.site",
                 Ingredients.class);
-        ingredients.getClickOnFilling();
+        ingredients.checkTransitionFillingSection();
 
-        ingredients.getClickBun();
-        assertTrue("Не верный раздел",ingredients.visibleBunSection());
+        ingredients.checkTransitionBunSection();
+        assertTrue("Неверный раздел",ingredients.checkIsRealBunSection());
     }
 }

@@ -15,27 +15,27 @@ public class Ingredients {
     @FindBy(how = How.XPATH,using = ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']")
     public SelenideElement visibleHeader;
     @Step
-    public void getClickBun(){
+    public void checkTransitionBunSection(){
         getBun.click();
     }
     @Step
-    public boolean visibleBunSection(){
+    public boolean checkIsRealBunSection(){
         return visibleHeader.getText().contentEquals("Булки");
     }
     @Step
-    public void getClickSauce(){
+    public void checkTransitionSauceSection(){
         getSauce.click();
     }
     @Step
-    public boolean visibleSauceSection(){
+    public boolean checkIsRealSauceSection(){
         return visibleHeader.getText().contentEquals("Соусы");
     }
     @Step
-    public void getClickOnFilling(){
+    public void checkTransitionFillingSection(){
         getFilling.click();
     }
     @Step
-    public boolean visibleFillingSection(){
+    public boolean checkIsRealFillingSection(){
         return visibleHeader.getText().contentEquals("Начинки");
     }
 }

@@ -54,6 +54,6 @@ public class TestsTransitionByConstructor {
         entrancePO.getClickButtonEntrance();
         registrationPO.getClickButtonPersonalArea();
         entrancePO.getClickButtonConstructor();
-        ingredients.getClickOnFilling();
+        ingredients.checkTransitionFillingSection();
     }
 }

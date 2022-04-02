@@ -54,6 +54,6 @@ public class TestsTransitionByStellaBurger {
         entrancePO.getClickButtonEntrance();
         registrationPO.getClickButtonPersonalArea();
         entrancePO.getClickButtonStellarBurgers();
-        ingredients.getClickOnFilling();
+        ingredients.checkTransitionFillingSection();
     }
 }
