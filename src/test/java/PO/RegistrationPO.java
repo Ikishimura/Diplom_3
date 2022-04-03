@@ -50,11 +50,11 @@ public class RegistrationPO {
     public void getClickFieldPassword(){
         getFieldPassword.click();
     }
-    public void getClickButtonEntrance(){
+    public void getClickButtonEntranceOnMainPage(){
         getButtonEntrance.click();
     }
 
-    public void getClickButtonRegistration1(){
+    public void getClickButtonRegistrationOnEntranceOnPage(){
         getButtonRegistration1.click();
     }
 

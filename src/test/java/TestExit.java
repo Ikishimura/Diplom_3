@@ -49,6 +49,6 @@ public class TestExit {
         registrationPO.getClickButtonPersonalArea();
         entrancePO.getClickExit();
         registrationPO.getClickButtonPersonalArea();
-        entrancePO.checkExit();
+        entrancePO.checkUserNotAuthorise();
     }
 }

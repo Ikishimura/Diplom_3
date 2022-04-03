@@ -37,7 +37,7 @@ public class EntrancePO {
     public SelenideElement checkExit;
 
     @Step
-    public void checkExit(){
+    public void checkUserNotAuthorise(){
         checkExit.shouldBe(Condition.visible);
     }
     @Step

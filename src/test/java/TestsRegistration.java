@@ -23,8 +23,8 @@ public class TestsRegistration {
         testsSuccessRegistration.setFillingOutTheRegistrationForm(RandomStringUtils.randomAlphabetic(5)+"@mail.ru",
                 RandomStringUtils.randomAlphabetic(7),RandomStringUtils.randomAlphabetic(6));
 
-        testsSuccessRegistration.getClickButtonRegistration1();
-        testsSuccessRegistration.getClickButtonEntrance();
+        testsSuccessRegistration.getClickButtonRegistrationOnEntranceOnPage();
+        testsSuccessRegistration.getClickButtonEntranceOnMainPage();
     }
     @DisplayName("Test success registration with error")
     @Test
@@ -39,6 +39,7 @@ public class TestsRegistration {
                 RandomStringUtils.randomAlphabetic(7),RandomStringUtils.randomAlphabetic(4));
 
         testsSuccessRegistrationWithError.getClickError();
-        testsSuccessRegistrationWithError.getClickButtonRegistration1();
+        testsSuccessRegistrationWithError.getClickButtonRegistrationOnEntranceOnPage();
+
     }
 }
