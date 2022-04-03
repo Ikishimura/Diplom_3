@@ -54,7 +54,7 @@ public class RegistrationPO {
         getButtonEntrance.click();
     }
 
-    public void getClickButtonRegistrationOnEntranceOnPage(){
+    public void getClickButtonRegistrationOnEntrancePage(){
         getButtonRegistration1.click();
     }
 
