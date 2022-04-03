@@ -1,0 +1,9 @@
+TestExit.class
+PO\Ingredients.class
+PO\EntrancePO.class
+TestsTransitionByConstructor.class
+TestEntrance.class
+TestsTransitionByStellaBurger.class
+TestsRegistration.class
+TestClickOnIngredients.class
+PO\RegistrationPO.class
